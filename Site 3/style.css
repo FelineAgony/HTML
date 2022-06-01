@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; /* ie 6/7 */
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+}
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+.no-space-between-inline-blocks {
+  *letter-spacing: normal; /*reset IE < 8*/
+  letter-spacing: -0.31em; /*webkit*/
+  word-spacing: -0.43em; /*IE < 8 && gecko*/
+}
+/*restore spacing on inner elements*/
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 1070px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.125rem; /* 18px / 16px = 1.125rem */
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: 100%; /* 1366px / 1366px = 100% */
+  background: url(images/background.jpg) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.milan-holidays {
+  padding: 45px 0 20px;
+  position: relative;
+  width: 100%; /* 1366px / 1366px = 100% */
+}
+.l-constrained {
+  margin: 0 auto;
+  position: relative;
+  width: 1070px;
+}
+.header {
+  margin: 0 auto;
+  position: relative;
+  width: 1064px;
+}
+.logo_group:hover{
+  text-shadow: 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(60,184,120,0);
+  color: #f26522;
+}
+.logo {
+  float: left;
+  position: relative;
+  width: 175px;
+}
+.logo-2 {
+  float: left;
+  margin: 4px 15px 0 0;
+}
+.col-2 {
+  float: left;
+  position: relative;
+  width: 114px;
+}
+.milan {
+  font-size: 1.8125rem; /* 29px / 16px = 1.8125rem */
+  font-weight: bold;
+}
+.holidays {
+  margin: 3px 0 0;
+  font-weight: bold;
+}
+.col {
+  float: right;
+  margin: 9px 0 0;
+  position: relative;
+  width: 243px;
+}
+.text {
+  text-align: right;
+}
+.text-2 {
+  margin: 3px 0 0;
+  text-align: right;
+}
+.tours {
+  display: table;
+  margin: 43px auto 0;
+  position: relative;
+}
+.row {
+  position: relative;
+  width: 1063px;
+}
+.row > * {
+  float: left;
+  margin: 0 65px 0 0;
+}
+.row > *:last-child {
+  margin-right: 0 !important;
+}
+.card-1 {
+  display: block;
+  position: relative;
+  width: 311px;
+}
+.inf-text3::after{
+  content: ">";
+}
+.inf-text1{
+  font-size: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  display: block;
+  width: 140px;
+}
+.inf-text2{
+  padding-left: 20px;
+  display: block;
+  float: left;
+  width: 140px;
+}
+.inf-text3{
+  display: block;
+}
+.inf{
+  z-index: -1;
+  background-color: #f26522;
+  color: white;
+  position: relative;
+  right: 0px;
+  top: -55px;
+  width: 308px;
+  height: 0;
+}
+.layer-21:hover{
+clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
+}
+.layer-22:hover{
+clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
+}
+.layer-23:hover{
+clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
+}
+.layer-24:hover{
+clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
+}
+.layer-25:hover{
+clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
+}
+.layer-26:hover{
+ clip-path: polygon(0 0, 100% 0, 100% 76%, 0 76%);
+}
+
+.shopping-tours-holder {
+  clear: left;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #7f7f7f; /*stroke*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 17px 24px 0 #000000;
+  -moz-box-shadow: 0 17px 24px 0 #000000;
+  box-shadow: 0 17px 24px 0 #000000; /*drop shadow*/
+}
+.layer-21 {
+  display: block;
+}
+.text-3 {
+  margin: 46px 0 0;
+  text-align: center;
+}
+.card-2 {
+  display: block;
+  position: relative;
+  width: 311px;
+}
+.sightseeing-tours-holder {
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #7f7f7f; /*stroke*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 17px 24px 0 #000000;
+  -moz-box-shadow: 0 17px 24px 0 #000000;
+  box-shadow: 0 17px 24px 0 #000000; /*drop shadow*/
+}
+.layer-22 {
+  display: block;
+  margin: 0 -1px 0 0;
+}
+.text-4 {
+  margin: 46px 0 0;
+  text-align: center;
+}
+.card-3 {
+  display: block;
+  position: relative;
+  width: 311px;
+}
+.food-tours-holder {
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #7f7f7f; /*stroke*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 17px 24px 0 #000000;
+  -moz-box-shadow: 0 17px 24px 0 #000000;
+  box-shadow: 0 17px 24px 0 #000000; /*drop shadow*/
+}
+.layer-23 {
+  display: block;
+}
+.text-5 {
+  margin: 46px 0 0;
+  text-align: center;
+}
+.row-2 {
+  margin: 56px 0 0;
+  position: relative;
+  width: 1063px;
+}
+.row-2 > * {
+  float: left;
+  margin: 0 65px 0 0;
+}
+.row-2 > *:last-child {
+  margin-right: 0 !important;
+}
+.card-4 {
+  display: block;
+  position: relative;
+  width: 311px;
+}
+.bars-nightlife-holder {
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #7f7f7f; /*stroke*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 17px 24px 0 #000000;
+  -moz-box-shadow: 0 17px 24px 0 #000000;
+  box-shadow: 0 17px 24px 0 #000000; /*drop shadow*/
+}
+.layer-24 {
+  display: block;
+}
+.text-6 {
+  margin: 46px 0 0;
+  text-align: center;
+}
+.card-5 {
+  display: block;
+  position: relative;
+  width: 311px;
+}
+.art-architecture-holder {
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #7f7f7f; /*stroke*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 17px 24px 0 #000000;
+  -moz-box-shadow: 0 17px 24px 0 #000000;
+  box-shadow: 0 17px 24px 0 #000000; /*drop shadow*/
+}
+.layer-26 {
+  display: block;
+  margin: 0 -1px 0 0;
+}
+.text-7 {
+  margin: 46px 0 0;
+  text-align: center;
+}
+.card-6 {
+  display: block;
+  position: relative;
+  width: 311px;
+}
+.walking-tours-holder {
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #7f7f7f; /*stroke*/
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
+  -webkit-box-shadow: 0 17px 24px 0 #000000;
+  -moz-box-shadow: 0 17px 24px 0 #000000;
+  box-shadow: 0 17px 24px 0 #000000; /*drop shadow*/
+}
+.layer-25 {
+  display: block;
+}
+.text-8 {
+  margin: 46px 0 0;
+  text-align: center;
+}
+.text-9 {
+  margin: 57px 0 0;
+  font-size: 0.75rem; /* 12px / 16px = 0.75rem */
+  text-align: center;
+}
