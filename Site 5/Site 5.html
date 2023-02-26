@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Запланированные визиты к врачу</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="image/logo.png" alt="Логотип">
+      </div>
+      <button class="create-btn">Создать</button>
+      </div>
+    </header>
+    <main>
+        <div class="board">
+            <p id="no-items-msg">No items have been added</p>
+          </div>
+        </div>
+      </main>
+      <div class="modal-overlay">
+        <div class="modal">
+          <h2>Новый визит</h2>
+          <form>
+            <label for="doctor">Выберите врача:</label>
+            <select name="doctor" id="doctor">
+              <option value="cardiologist">Кардиолог</option>
+              <option value="dentist">Стоматолог</option>
+              <option value="therapist">Терапевт</option>
+            </select>
+            <div class="form-fields">
+                <div id="cardiologistFields">
+                    <label for="cardiologistPurpose">Цель визита:</label>
+                    <input type="text" id="cardiologistPurpose" name="cardiologistPurpose">
+                    <label for="normalPressure">Обычное давление:</label>
+                    <input type="text" id="normalPressure" name="normalPressure">
+                    <label for="bmi">Индекс массы тела:</label>
+                    <input type="text" id="bmi" name="bmi">
+                    <label for="cardioConditions">Перенесенные заболевания сердечно-сосудистой системы:</label>
+                    <input type="text" id="cardioConditions" name="cardioConditions">
+                    <label for="age">Возраст:</label>
+                    <input type="text" id="age" name="age">
+                    <label for="fullName">ФИО:</label>
+                    <input type="text" id="fullName" name="fullName">
+                  </div>
+                  <div id="dentistFields">
+                    <label for="dentistPurpose">Цель визита:</label>
+                    <input type="text" id="dentistPurpose" name="dentistPurpose">
+                    <label for="lastVisit">Дата последнего посещения:</label>
+                    <input type="text" id="lastVisit" name="lastVisit">
+                    <label for="fullName">ФИО:</label>
+                    <input type="text" id="fullName" name="fullName">
+                  </div>
+                  <div id="therapistFields">
+                    <label for="therapistPurpose">Цель визита:</label>
+                    <input type="text" id="therapistPurpose" name="therapistPurpose">
+                    <label for="age">Возраст:</label>
+                    <input type="text" id="age" name="age">
+                    <label for="fullName">ФИО:</label>
+                    <input type="text" id="fullName" name="fullName">
+              </div>
+              <label for="comments">Комментарии:</label>
+              <textarea name="comments" id="comments" maxlength="400"></textarea>
+              <button type="submit" class="create-visit-btn">Добавить карточку</button>
+              <button type="button" class="close-modal-btn">Закрыть</button>
+            </form>
+        </div>
+    </div>
+    <script src="visits.js"></script>
+</body>
+</html>
