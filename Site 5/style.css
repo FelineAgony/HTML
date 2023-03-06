@@ -1,233 +1,225 @@
-@charset "UTF-8";
-/**
-* Eric Meyer's Reset CSS v2.0
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input, textarea {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section, time {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  color: black;
-  background: white;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+body{
+  background: url(images/Фон.png);
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  width: 100%;
+  max-width: 1140px;
+  height: 680px;
+  margin: 0 auto;
+  font-family: 'Arimo', sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  text-align: center;
+  box-shadow: 0 10px 4px rgba(0,0,0,0.1);
 }
 
-/* meyerweb css reset end */
-
-textarea:focus, input:focus {
-  outline: 0;
+th {
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  border: none;
 }
 
-input {
-  border-width: 0;
+td {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #ccc;
 }
 
-em {
-  font-style: italic;
+td:nth-child(n+2):nth-child(-n+4) {
+  box-shadow: -3px 0px 5px -5px rgba(0,0,0,0.75);
 }
 
-h1, h2, h3, h4, h5, h6 {
+tr:nth-child(4n+4),
+tr:nth-child(4n+6),
+tr:nth-child(4n+8) {
+  background-color: #e3e3e3;
+}
+
+tr:last-child td:first-child {
+  background-color: #dddddd;
+}
+
+tr:nth-child(3), 
+tr:nth-child(5), 
+tr:nth-child(7) {
+  background-color: #f2f2f2;
+}
+
+td small {
+  font-size: 12px;
+}
+tr:first-child {
+  height: 70px;
+}
+
+tr:nth-child(2) {
+  height: 85px;
+  background-color: #fafafa;
+}
+
+
+
+thead tr:first-child th:first-child {
+  width: 310px;
+  text-align: left;
+}
+
+thead tr:first-child th:not(:first-child) {
+  width: 280px;
+  text-align: center;
+}
+
+.button-standard {
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0;
+  background-color: #89c331;
+  border: none;
+  color: #fff;
+  padding: 12px 52px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-.group:before,
-.group:after {
-  content: " ";
-  display: table;
+.button-standard:hover {
+  background-color: #22c546;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
-.group:after {
-  clear: both;
+.button-ultimate {
+  font-weight: bold;
+  background-color: #f04a56;
+  border: none;
+  color: #fff;
+  padding: 12px 52px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-.group {
-  zoom: 1; /* ie 6/7 */
+.button-ultimate:hover {
+  background-color: #b6121d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
-embed,
-img,
-object,
-video {
-  max-width: 100%;
-}
-sup {
-  font-size: 58.3%;
-  vertical-align: text-top;
-}
-sub {
-  font-size: 58.3%;
-  vertical-align: text-bottom;
-}
-.no-space-between-inline-blocks {
-  *letter-spacing: normal; /*reset IE < 8*/
-  letter-spacing: -0.31em; /*webkit*/
-  word-spacing: -0.43em; /*IE < 8 && gecko*/
-}
-/*restore spacing on inner elements*/
-.no-space-between-inline-blocks > * {
-  letter-spacing: normal;
-  word-spacing: normal;
-}
-.displace {
-  left: -5000px;
-  position: absolute;
-}
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+.button-premium {
+  font-weight: bold;
+  background-color: #20807c;
+  border: none;
+  color: #fff;
+  padding: 12px 52px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
-/* Стилизация заголовка */
-h1 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  /* Стилизация логотипа */
-  .logo {
-    position:relative;
-    top: 0px;
-    left: 0px;
-    width: 250px;
-    height: 155px;
-  }
-  /* Стилизация кнопки */
-  button.create-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  button {
-    background-color: #00c753;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  /* Стиль для модального окна */
-.modal {
-    display: none; /* начальное состояние - скрыто */
-    position: relative; /* фиксированное положение на экране */
-    z-index: 1; /* задаем z-index, чтобы модальное окно было поверх остальных элементов */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 10%);
-    width: 80%; /* ширина на всю ширину экрана */
-    height: 100%; /* высота на всю высоту экрана */
-    overflow: auto; /* добавляем прокрутку, если содержимое модального окна не помещается на экране */
-    background-color: rgb(50 0 0 / 21%); /* устанавливаем цвет фона и прозрачность */
-  }
-  
-  /* Стиль для содержимого модального окна */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto; /* отступ сверху и снизу, а по горизонтали автоматически центрируется */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 60%; /* изменяем ширину на 60% */
-    max-height: 80%; /* добавляем максимальную высоту */
-    max-width: 800px; /* добавляем максимальную ширину */
-    overflow-y: auto; /* добавляем вертикальную прокрутку при необходимости */
-  }
-  
-  /* Стилизация формы */
-  form {
-    margin-bottom: 30px;
-  }
-  
-  /* Стилизация полей ввода */
-  input[type="text"],
-  textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    margin: 10px;
-    max-width: 300px;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  
-  /* Стилизация сообщения, показываемого при отсутствии карточек */
-  #empty-message {
-    font-size: 18px;
-    color: #333;
-    margin-top: 20px;
-  }
+.button-premium:hover {
+  background-color: #35a7a1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+
+.contact-button {
+  display: inline-block;
+  background-color: #484848;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #756e6e;
+}
+
+.price {
+  font-size: 60px;
+}
+
+.cents {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  top: -25px;
+  margin-left: 5px;
+}
+
+.period {
+  font-size: 18px;
+  position: relative;
+  top: -5px;
+  left: -30px;
+}
+
+.option {
+  font-size: 30px;
+  font-weight: bold;
+}
+.standard {
+  font-size: 24px;
+  background-color: #89c331;
+  color: #fff
+}
+
+.ultimate {
+  font-size: 24px;
+  background-color: #f04a56;
+  color: #fff
+}
+
+.premium {
+  font-size: 24px;
+  background-color: #20807c;
+  color: #fff
+}
+
+.fa-box-archive::before {
+  font-size: 24px;
+  left: -15px;
+  position: relative;
+  content: "\f187"; }
+
+.fa-cloud-arrow-up::before {
+  font-size: 24px;
+  left: -15px;
+  position: relative;
+    content: "\f0ee"; }
+
+.fa-envelope::before {
+  font-size: 24px;
+  left: -15px;
+  position: relative;
+      content: "\f0e0"; }
+
+.fa-headset:before{
+  font-size: 24px;
+  left: -15px;
+  position: relative;
+  content:"\f590"}
+
+.fa-boxes-stacked::before {
+  font-size: 24px;
+  left: -15px;
+  position: relative;
+          content: "\f468"; }
+
+.fa-users::before {
+  font-size: 24px;
+  left: -15px;
+  position: relative;
+  content: "\f0c0"; }

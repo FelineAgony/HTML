@@ -1,73 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <title>Запланированные визиты к врачу</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <title>Price table</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Arimo:regular,italic,700,700italic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="image/logo.png" alt="Логотип">
-      </div>
-      <button class="create-btn">Создать</button>
-      </div>
-    </header>
-    <main>
-        <div class="board">
-            <p id="no-items-msg">No items have been added</p>
-          </div>
-        </div>
-      </main>
-      <div class="modal-overlay">
-        <div class="modal">
-          <h2>Новый визит</h2>
-          <form>
-            <label for="doctor">Выберите врача:</label>
-            <select name="doctor" id="doctor">
-              <option value="cardiologist">Кардиолог</option>
-              <option value="dentist">Стоматолог</option>
-              <option value="therapist">Терапевт</option>
-            </select>
-            <div class="form-fields">
-                <div id="cardiologistFields">
-                    <label for="cardiologistPurpose">Цель визита:</label>
-                    <input type="text" id="cardiologistPurpose" name="cardiologistPurpose">
-                    <label for="normalPressure">Обычное давление:</label>
-                    <input type="text" id="normalPressure" name="normalPressure">
-                    <label for="bmi">Индекс массы тела:</label>
-                    <input type="text" id="bmi" name="bmi">
-                    <label for="cardioConditions">Перенесенные заболевания сердечно-сосудистой системы:</label>
-                    <input type="text" id="cardioConditions" name="cardioConditions">
-                    <label for="age">Возраст:</label>
-                    <input type="text" id="age" name="age">
-                    <label for="fullName">ФИО:</label>
-                    <input type="text" id="fullName" name="fullName">
-                  </div>
-                  <div id="dentistFields">
-                    <label for="dentistPurpose">Цель визита:</label>
-                    <input type="text" id="dentistPurpose" name="dentistPurpose">
-                    <label for="lastVisit">Дата последнего посещения:</label>
-                    <input type="text" id="lastVisit" name="lastVisit">
-                    <label for="fullName">ФИО:</label>
-                    <input type="text" id="fullName" name="fullName">
-                  </div>
-                  <div id="therapistFields">
-                    <label for="therapistPurpose">Цель визита:</label>
-                    <input type="text" id="therapistPurpose" name="therapistPurpose">
-                    <label for="age">Возраст:</label>
-                    <input type="text" id="age" name="age">
-                    <label for="fullName">ФИО:</label>
-                    <input type="text" id="fullName" name="fullName">
-              </div>
-              <label for="comments">Комментарии:</label>
-              <textarea name="comments" id="comments" maxlength="400"></textarea>
-              <button type="submit" class="create-visit-btn">Добавить карточку</button>
-              <button type="button" class="close-modal-btn">Закрыть</button>
-            </form>
-        </div>
-    </div>
-    <script src="visits.js"></script>
-</body>
+    <table>
+      <tbody>
+        <tr>
+          <td rowspan="2" style="font-size: 16px; font-weight: bold;">CHOOSE YOUR <br><span class="option">PRICING PLAN</span></td>
+          <td class="standard">STANDARD</td>
+          <td class="ultimate">ULTIMATE</td>
+          <td class="premium">PREMIUM</td>
+        </tr>
+        <tr>          
+          <td class="price">$17<span class="cents">.99</span><span class="period">PER MONTH</span></td>
+          <td class="price">$37<span class="cents">.99</span><span class="period">PER MONTH</span></td>
+          <td class="price">$97<span class="cents">.99</span><span class="period">PER MONTH</span></td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-box-archive"></i>STORAGE</td>
+          <td>500GB STORAGE</td>
+          <td>1000GB STORAGE</td>
+          <td>2000GB STORAGE</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-cloud-arrow-up"></i>BANDWITH</td>
+          <td colspan="2">LIMITED</td>
+          <td>UNLIMITED</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-envelope"></i>EMAIL</td>
+          <td>25 EMAILS</td>
+          <td>45 EMAILS</td>
+          <td>65 EMAILS</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-headset"></i>SUPPORT</td>
+          <td colspan="3">24/7</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-boxes-stacked"></i>PRODUCTS</td>
+          <td>20 PRODUCTS</td>
+          <td>30 PRODUCTS</td>
+          <td>60 PRODUCTS</td>
+        </tr>
+        <tr>
+          <td><i class="fa-solid fa-users"></i>USERS</td>
+          <td>1 USERS</td>
+          <td>10 USERS</td>
+          <td>15 USERS</td>
+        </tr>
+        <tr>
+          <td><button class="contact-button"> CONTACT US </button></td>
+          <td><button class="button-standard">BUY NOW</button></td>
+          <td><button class="button-ultimate">BUY NOW</button></td>
+          <td><button class="button-premium">BUY NOW</button></td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </body>
 </html>
