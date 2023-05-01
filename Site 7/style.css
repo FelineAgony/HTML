@@ -1,23 +1,79 @@
-html,
 body {
+  margin: 0;
   background: url(image/space.jpg);
-  overflow: hidden;
 }
 
-/* Оформление контейнера для анимации */
-.star-wars {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Задаем высоту контейнера на всю высоту экрана*/
-  }
-  
-  .crawl {
+/* Установка анимации, цвета, размера и скрытие текста */
+.intro {
     position: absolute;
-    top: 100vh;/* Указываем начальную позицию внизу экрана */
-    left: 50%;
-    transform: translate(-50%, -50%) perspective(1000px) rotateX(20deg);/* Наклоняем текст на 20 градусов и задаем перспективу для создания эффекта глубины*/
-    color: yellow;
-    font-size: 40px;
-    padding: 70px;
-  }
-  
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    animation: intro 6s ease-out 1s;
+    color: rgb(75, 213, 238);
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Установка шрифта, наклонение текста, и расположение */
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+}
+
+#board:after {    
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Установка анимации прокрутки и ее позиционирование */
+#content {
+  animation: scroll 100s linear 16s infinite;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}
