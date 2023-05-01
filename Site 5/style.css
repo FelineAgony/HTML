@@ -29,21 +29,21 @@ td {
   text-align: center;
   border-right: 1px solid #ccc;
 }
-
+/* Наложение тени бокса на ячейки таблицы, кроме первой */
 td:nth-child(n+2):nth-child(-n+4) {
   box-shadow: -3px 0px 5px -5px rgba(0,0,0,0.75);
 }
-
+/* Альтернативный цвет фона для каждого 4-го ряда, начиная с 4-го ряда */
 tr:nth-child(4n+4),
 tr:nth-child(4n+6),
 tr:nth-child(4n+8) {
   background-color: #e3e3e3;
 }
-
+/* Изменение цвета фона первой ячейки в последнем ряду */
 tr:last-child td:first-child {
   background-color: #dddddd;
 }
-
+/* Альтернативный цвет фона для 3-го, 5-го и 7-го ряда */
 tr:nth-child(3), 
 tr:nth-child(5), 
 tr:nth-child(7) {

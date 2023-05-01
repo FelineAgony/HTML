@@ -4,17 +4,18 @@ body {
   overflow: hidden;
 }
 
+/* Оформление контейнера для анимации */
 .star-wars {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Задаем высоту контейнера на всю высоту экрана*/
   }
   
   .crawl {
     position: absolute;
-    top: 100vh;
+    top: 100vh;/* Указываем начальную позицию внизу экрана */
     left: 50%;
-    transform: translate(-50%, -50%) perspective(1000px) rotateX(20deg);
+    transform: translate(-50%, -50%) perspective(1000px) rotateX(20deg);/* Наклоняем текст на 20 градусов и задаем перспективу для создания эффекта глубины*/
     color: yellow;
     font-size: 40px;
     padding: 70px;

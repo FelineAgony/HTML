@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   }
-  
+  /* Header */
   .header {
     height: 375px;
     background-image: url('image/header-bg.jpeg');
@@ -107,7 +107,7 @@ body {
   .header__button--blue:hover {
     background-color: #0da8c2;
   }
-
+ /* Popular Posts*/
   .popular-posts {
     width: 100%;
     max-width: 1900px;
@@ -160,7 +160,7 @@ body {
   #post-6 {
     margin-top: -125px;
   }
-
+ /* Popular Clients*/
   .popular-clients {
     background-image: url('image/parallax-bg.jpeg');
     background-position: center 0%;
@@ -216,7 +216,7 @@ body {
     max-width: 100%; /* картинка занимает всю ширину колонки */
     height: auto;
   }
-  
+   /* Top Rated */
   .top-rated {
     text-align: center;
     padding: 50px 0;
@@ -242,7 +242,7 @@ body {
     height: auto;
   }
   
-  /* HOT NEWS SECTION */
+  /* HOT NEWS */
 
 .hot-news {
     max-width: 1680px;
@@ -261,9 +261,9 @@ body {
 
 .hot-news-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);/* 2 колонки с одинаковой шириной */
+  grid-template-rows: repeat(4, auto); /* 4 строки с автоматической высотой */
+  gap: 40px; /* Промежуток между элементами в сетке */
 }
 
 .hot-news-card {
@@ -293,28 +293,29 @@ body {
 .hot-news-card-text p {
   margin: 0;
 }
-
+/* Установка макета сетки для первой и восьмой карточек, чтобы отобразить две колонки одинаковой ширины */
 .hot-news-card:nth-child(1),
 .hot-news-card:nth-child(8) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
+/* Расположение седьмой карточки в левой части макета сетки */
 .hot-news-card:nth-child(7) {
   justify-self: start;
 
 }
+/* Расположение второй карточки в правой части макета сетки */
 .hot-news-card:nth-child(2)
 {
   justify-self: right;
 }
-
+/* Установка максимальной ширины и высоты для изображений в маленьких карточках */
 .hot-news-card.small img {
   max-width: 290px;
   height: 250px;
   margin-right: 16px;
 }
-
+/* Центрирование текста по центру в маленьких карточках*/
 .hot-news-card.small .hot-news-card-text {
   text-align: center;
 }
