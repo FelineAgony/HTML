@@ -429,7 +429,7 @@ body {
   }
   /* Стиль при наведении на вкладку */
   .work-section .tabs-container .tab:hover {
-    color: #18cfab;
+    background-color: #18cfab;
   }
   /* Стиль для подчеркивания при наведении на вкладку */
   .work-section .tabs-container .tab:hover::before {

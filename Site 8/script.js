@@ -15,7 +15,7 @@ function changeTab(index) {
   }
 
   //Функция фильтра
-  function changeFilter(filter) {
+  function changeFilter(event, filter) {
     // Показать только элементы, относящиеся к выбранной категории
     const workItems = document.querySelectorAll('.work-item');
     workItems.forEach(item => {
@@ -25,16 +25,13 @@ function changeTab(index) {
         item.style.display = 'none';
       }
     });
-  
-    // Обновить активную кнопку
-    const tabs = document.querySelectorAll('.tabs-container .tab');
-    tabs.forEach(tab => {
-      if (tab.textContent.toLowerCase() === filter) {
-        tab.classList.add('active');
-      } else {
-        tab.classList.remove('active');
-      }
-    });
+    // Удаляем класс "active" у всех вкладок
+  var tabs = document.getElementsByClassName('tab');
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove('active');
+  }
+  // Добавляем класс "active" только к выбранной вкладке
+  event.target.classList.add('active');
   }
   
   function loadMore() {
@@ -52,7 +49,7 @@ function changeTab(index) {
     if (remainingHiddenItems.length === 0) {
       loadMoreButton.style.display = 'none';
     }
-  }
+}
   //Функция карусели
 // Получаем все необходимые элементы
 const carouselItems = document.querySelectorAll('.carousel-item');
