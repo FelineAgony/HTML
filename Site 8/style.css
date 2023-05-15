@@ -239,7 +239,7 @@ body {
     font-size: 20px;
     margin-top: 20px;
   }
-  
+
  /*services section*/
   .services-section {
     height: 560px;
@@ -265,12 +265,12 @@ body {
 .divider-right {
   margin-left: 49%;
 }
-  
+  /* Стиль для контейнера вкладок */
   .tabs-container {
     display: flex;
     justify-content: center;
   }
-  
+  /* Стиль для отдельной вкладки */
   .tab {
     height: 70px;
     padding: 10px 20px;
@@ -282,11 +282,11 @@ body {
     position: relative;
     cursor: pointer;
   }
-  
+  /* Стиль при наведении на вкладку */
   .tab:hover {
     background-color: #18cfab;
   }
-  
+  /* Стиль для треугольника при наведении */
   .tab:hover::after {
     content: "";
     position: absolute;
@@ -299,12 +299,12 @@ body {
     border-right: 5px solid transparent;
     border-top: 5px solid #18cfab;
   }
-
+/* Стиль для активной вкладки */
   .tab.active {
     background-color: #18cfab;
     color: #fff;
   }
-
+/* Стиль для треугольника активной вкладки */
   .tab.active::after {
     content: "";
     position: absolute;
@@ -399,13 +399,14 @@ body {
   .work-section{
     background-color: #f8fcfe;
   }
+  /* Стиль для контейнера вкладок */
   .work-section .tabs-container {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+  /* Стиль для отдельной вкладки */
   .work-section .tabs-container .tab {
     font-size: 18px;
     font-weight: 600;
@@ -415,7 +416,7 @@ body {
     position: relative;
     transition: all 0.3s ease-in-out;
   }
-  
+  /* Стиль для линии под вкладкой */
   .work-section .tabs-container .tab::before {
     content: "";
     position: absolute;
@@ -426,22 +427,22 @@ body {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
-  
+  /* Стиль при наведении на вкладку */
   .work-section .tabs-container .tab:hover {
     color: #18cfab;
   }
-  
+  /* Стиль для подчеркивания при наведении на вкладку */
   .work-section .tabs-container .tab:hover::before {
     background-color: #18cfab;
   }
-  
+  /* Стиль для галереи работ */
   .work-section .work-gallery {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   }
-  
+  /* Стиль для отдельного элемента в галерее */
   .work-item {
     width: 280px;
     height: 300px;
@@ -452,13 +453,13 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+  /* Стиль для изображения */
   .work-item img {
     width: 100%;
     height: auto;
     display: block;
   }
-  
+  /* Стиль для контейнера "Load More" */
   .work-section .load-more-container {
     display: flex;
     justify-content: center;
@@ -488,7 +489,7 @@ body {
     margin-bottom: 40px;
   }
 
-  
+  /* Стиль для сетки новостей */
   .breaking-news-section .news-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -496,17 +497,17 @@ body {
     margin-top: 40px;
     margin-left: 200px;
   }
-  
+  /* Стиль для карточки новости */
   .breaking-news-section .news-card {
     width: 265px;
     height: 280px;
     background-color: #f8fcfe;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавленная тень */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     cursor: pointer;
   }
-  
+  /* Стиль при наведении на карточку */
   .breaking-news-section .news-card:hover .date-container {
     background-color: #18cfab;
   }
@@ -514,7 +515,7 @@ body {
   .breaking-news-section .news-card:hover .news-text {
     color: #18cfab;
   }
-  
+  /* Стиль для контейнера даты */
   .breaking-news-section .date-container {
     position: absolute;
     right: 0px;
@@ -642,13 +643,13 @@ body {
     color: #18cfab;
     font-size: 16px;
   }
-  
+  /* Стиль для контейнера элементов управления слайдером */
   .carousel-controls {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+  /* Стиль для стрелок слайдера */
   .carousel-controls .arrow {
     width: 30px;
     height: 30px;
@@ -701,7 +702,7 @@ body {
   .carousel-item.active .feedback-text p {
     font-weight: 400;
   }
-
+/* Стиль для анимации активной точки-индикатора */
   .carousel-controls .dots .dot.active {
     transform: translateY(-20px);
   }
