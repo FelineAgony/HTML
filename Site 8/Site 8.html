@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site 8</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <div class="logo-hexagon">
+            <span class="logo-letter">H</span>
+          </div>
+          <span class="logo-text">the<span class="logo-highlight">Ham</span></span>
+        </div>
+        <nav class="menu">
+            <ul>
+              <li class="menu-item"><a href="#">HOME</a></li>
+              <li class="menu-item"><a href="#">ABOUT</a></li>
+              <li class="menu-item"><a href="#">SKILLS</a></li>
+              <li class="menu-item"><a href="#">SERVICE</a></li>
+              <li class="menu-item"><a href="#">WORK</a></li>
+              <li class="menu-item"><a href="#">TESTIMONIAL</a></li>
+              <li class="menu-item"><a href="#">BLOG</a></li>
+              <li class="menu-item"><a href="#">TEAM</a></li>
+              <li class="menu-item"><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+      </header>    
+
+      <section class="home-section">
+        <div class="home-content">
+          <h1 class="home-title">
+            THE HAM IS <span class="highlight">WORDPRESS THEME</span>
+          </h1>
+          <h2 class="home-subtitle">WE ARE CREATIVE</h2>
+          <p class="home-description">Just Buy And Enjoy These Awesome Features</p>
+          <div class="home-buttons">
+            <a class="explore-button" href="#">EXPLORE NOW</a>
+            <a class="purchase-button" href="#">PURCHASE NOW</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="options-section">
+        <div class="option-card">
+          <div class="card-header">
+            <i class="fa-solid fa-arrow-pointer"></i>
+            <h3 class="card-title">DIFFERENT THEME OPTION</h3>
+          </div>
+        </div>
+        <div class="option-card">
+            <div class="card-header">
+              <i class="fas fa-gem"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">FULLY CUSTOMIZABLE</h3>
+            </div>
+          </div>
+          <div class="option-card">
+            <div class="card-header">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">UNLIMITED SUPPORT</h3>
+            </div>
+          </div>
+          <div class="option-card">
+            <div class="card-header">
+                <i class="fa-solid fa-laptop"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">RESPONSIVE ALL DEVICE </h3>
+            </div>
+          </div>
+      </section>
+
+      <section class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="small-divider divider-left"></div>
+        <div class="small-divider divider-right"></div>
+        <div class="tabs-container">
+          <div class="tab active" onclick="changeTab(0)">Web Design</div>
+          <div class="tab" onclick="changeTab(1)">Graphic Design</div>
+          <div class="tab" onclick="changeTab(2)">Online Support</div>
+          <div class="tab" onclick="changeTab(3)">App Design</div>
+          <div class="tab" onclick="changeTab(4)">Online Marketing</div>
+          <div class="tab" onclick="changeTab(5)">SEO Service</div>
+        </div>
+        <div class="content-container">
+          <div class="content active">
+            <img src="image/muerta.jpg" alt="Web Design Image" class="service-image">
+            <div class="service-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="image/graphic_design/graphic-design8.jpg" alt="Graphic Design Image" class="service-image">
+            <div class="service-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="image/graphic_design/graphic-design2.jpg" alt="Graphic Design Image" class="service-image">
+            <div class="service-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="image/graphic_design/graphic-design3.jpg" alt="Graphic Design Image" class="service-image">
+            <div class="service-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="image/graphic_design/graphic-design4.jpg" alt="Graphic Design Image" class="service-image">
+            <div class="service-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="image/muerta.jpg" alt="Graphic Design Image" class="service-image">
+            <div class="service-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="purchase-section">
+        <div class="purchase-content">
+          <h2 class="purchase-title">EVERYTHING IS READY.JUST BUY AND INSTALL NOW</h2>
+          <p class="purchase-text">Smooth, reliable, responsive, ready. Perfect portfolio, unique blog layout, and many options for you.</p>
+          <button class="purchase-button-ps">Purchase Now</button>
+        </div>
+      </section>
+      
+
+      <section class="work-section">
+        <div class="container">
+          <h2 class="section-title">Our Amazing Work</h2>
+          <div class="small-divider divider-left"></div>
+          <div class="small-divider divider-right"></div>
+          <div class="tabs-container">
+            <div class="tab active" onclick="changeFilter('all')">All</div>
+            <div class="tab" onclick="changeFilter('Dota-2')">Dota 2</div>
+            <div class="tab" onclick="changeFilter('Witcher-3')">Witcher 3</div>
+            <div class="tab" onclick="changeFilter('Mandalorian')">Mandalorian</div>
+            <div class="tab" onclick="changeFilter('Pets')">Pets</div>
+          </div>
+          <div class="work-gallery">
+            <div class="work-item Dota-2">
+              <img src="image/Amazing_work/dota_2.jpg" alt="Work 1">
+            </div>
+            <div class="work-item Witcher-3">
+              <img src="image/Amazing_work/witcher_3.jpg" alt="Work 2">
+            </div>
+            <div class="work-item Mandalorian">
+              <img src="image/Amazing_work/mandalorian.jpg" alt="Work 3">
+            </div>
+            <div class="work-item Pets">
+              <img src="image/Amazing_work/pet.jpg" alt="Work 4">
+            </div>
+            <div class="work-item Dota-2">
+              <img src="image/Amazing_work/Dota_2.png" alt="Work 5">
+            </div>
+            <div class="work-item Witcher-3">
+              <img src="image/Amazing_work/witcher_3.png" alt="Work 6">
+            </div>
+            <div class="work-item Mandalorian">
+              <img src="image/Amazing_work/mandalorian1.jpg" alt="Work 7">
+            </div>
+            <div class="work-item Pets">
+              <img src="image/Amazing_work/pet1.jpg" alt="Work 8">
+            </div>
+            <div class="work-item Dota-2">
+              <img src="image/Amazing_work/Dota_2_1.png" alt="Work 9">
+            </div>
+            <div class="work-item Witcher-3">
+              <img src="image/Amazing_work/witcher_3_1.png" alt="Work 10">
+            </div>
+            <div class="work-item Mandalorian">
+              <img src="image/Amazing_work/mandalorian2.jpg" alt="Work 11">
+            </div>
+            <div class="work-item Pets">
+              <img src="image/Amazing_work/pet2.jpg" alt="Work 12">
+            </div>
+          </div>
+          <div class="load-more-container">
+            <button class="load-more-button" onclick="loadMore()">+ LOAD MORE</button>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="breaking-news-section">
+        <div class="container">
+          <h2 class="section-title">Breaking News</h2>
+          <div class="small-divider divider-left"></div>
+          <div class="small-divider divider-right"></div>
+          <div class="news-grid">
+            <div class="news-card">
+              <div class="date-container">
+                <div class="date-day">12</div>
+                <div class="date-month">Feb</div>
+              </div>
+              <img src="image/news/Layer 47.png" alt="News 1">
+              <div class="news-text">Amazing Image Post</div>
+              <div class="news-details">
+                <div class="news-author">By admin</div>
+                <div class="news-divider"></div>
+                <div class="news-comments">
+                  <div class="comment-icon"></div>
+                  <div class="comment-count">2 comments</div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="date-container">
+                <div class="date-day">12</div>
+                <div class="date-month">Feb</div>
+              </div>
+              <img src="image/news/Layer 50.png" alt="News 1">
+              <div class="news-text">Amazing Blog Post</div>
+              <div class="news-details">
+                <div class="news-author">By admin</div>
+                <div class="news-divider"></div>
+                <div class="news-comments">
+                  <div class="comment-icon"></div>
+                  <div class="comment-count">2 comments</div>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+                <div class="date-container">
+                  <div class="date-day">12</div>
+                  <div class="date-month">Feb</div>
+                </div>
+                <img src="image/news/Layer 51.png" alt="News 1">
+                <div class="news-text">Amazing Blog Post</div>
+                <div class="news-details">
+                  <div class="news-author">By admin</div>
+                  <div class="news-divider"></div>
+                  <div class="news-comments">
+                    <div class="comment-icon"></div>
+                    <div class="comment-count">2 comments</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="date-container">
+                  <div class="date-day">12</div>
+                  <div class="date-month">Feb</div>
+                </div>
+                <img src="image/news/Layer 52.png" alt="News 1">
+                <div class="news-text">Amazing Blog Post</div>
+                <div class="news-details">
+                  <div class="news-author">By admin</div>
+                  <div class="news-divider"></div>
+                  <div class="news-comments">
+                    <div class="comment-icon"></div>
+                    <div class="comment-count">2 comments</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="date-container">
+                  <div class="date-day">12</div>
+                  <div class="date-month">Feb</div>
+                </div>
+                <img src="image/news/Layer 53.png" alt="News 1">
+                <div class="news-text">Amazing Blog Post</div>
+                <div class="news-details">
+                  <div class="news-author">By admin</div>
+                  <div class="news-divider"></div>
+                  <div class="news-comments">
+                    <div class="comment-icon"></div>
+                    <div class="comment-count">2 comments</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="date-container">
+                  <div class="date-day">12</div>
+                  <div class="date-month">Feb</div>
+                </div>
+                <img src="image/news/Layer 54.png" alt="News 1">
+                <div class="news-text">Amazing Blog Post</div>
+                <div class="news-details">
+                  <div class="news-author">By admin</div>
+                  <div class="news-divider"></div>
+                  <div class="news-comments">
+                    <div class="comment-icon"></div>
+                    <div class="comment-count">2 comments</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="date-container">
+                  <div class="date-day">12</div>
+                  <div class="date-month">Feb</div>
+                </div>
+                <img src="image/news/Layer 55.png" alt="News 1">
+                <div class="news-text">Amazing Blog Post</div>
+                <div class="news-details">
+                  <div class="news-author">By admin</div>
+                  <div class="news-divider"></div>
+                  <div class="news-comments">
+                    <div class="comment-icon"></div>
+                    <div class="comment-count">2 comments</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="date-container">
+                  <div class="date-day">12</div>
+                  <div class="date-month">Feb</div>
+                </div>
+                <img src="image/news/Layer 56.png" alt="News 1">
+                <div class="news-text">Amazing Blog Post</div>
+                <div class="news-details">
+                  <div class="news-author">By admin</div>
+                  <div class="news-divider"></div>
+                  <div class="news-comments">
+                    <div class="comment-icon"></div>
+                    <div class="comment-count">2 comments</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="client-feedback-section">
+        <div class="section-title">What People Say About theHam</div>
+        <div class="small-divider divider-left"></div>
+        <div class="small-divider divider-right"></div>
+        <div class="section-content">
+          <p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+        </div>
+        <div class="carousel">
+          <div class="carousel-item active">
+            <div class="feedback-text">
+              <p class="feedback-color">Mexican goddess of death</p>
+              <p>Muerta</p>
+            </div>
+            <img src="image/muerta.jpg" alt="Person 1">
+          </div>
+          <div class="carousel-item">
+            <div class="feedback-text">
+              <p class="feedback-color">Terrorblade is the Demon Marauder—an outlaw hellion whom even other demons fear</p>
+              <p>Terrorblade</p>
+            </div>
+            <img src="image/Amazing_work/dota_2.jpg" alt="Person 2">
+          </div>
+          <div class="carousel-item">
+            <div class="feedback-text">
+              <p class="feedback-color">Of all the assassins raised by the Sisters of the Veil, only one is known by name: Mortred</p>
+              <p>Phantom Assassin</p>
+            </div>
+            <img src="image/Amazing_work/Dota_2_1.png" alt="Person 3">
+          </div>
+          <div class="carousel-item">
+            <div class="feedback-text">
+              <p class="feedback-color">Drow Ranger's given name is Traxex-a name well suited to the short, trollish, rather repulsive Drow people</p>
+              <p>Drow Ranger</p>
+            </div>
+            <img src="image/Amazing_work/Dota_2.png" alt="Person 4">
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <div class="arrow arrow-left">&#8249;</div>
+          <div class="dots">
+            <div class="dot active"><img src="image/muerta.jpg" alt="Person 1"></div>
+            <div class="dot"><img src="image/Amazing_work/dota_2.jpg" alt="Person 2"></div>
+            <div class="dot"><img src="image/Amazing_work/Dota_2_1.png" alt="Person 3"></div>
+            <div class="dot"><img src="image/Amazing_work/Dota_2.png" alt="Person 4"></div>
+          </div>
+          <div class="arrow arrow-right">&#8250;</div>
+        </div>
+      </section>
+
+<footer class="footer-section">
+  <div class="footer-content">
+    <span class="footer-text">&copy; Copyright 2015 </span><span class="footer-text-color">theHam</span>
+    <span class="footer-divider"></span>
+    <span class="footer-text">All Rights Reserved</span>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
